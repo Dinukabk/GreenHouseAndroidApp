@@ -2,7 +2,7 @@
 
 <p id="description">The Greenhouse Automation Android App is designed to help you monitor and control the environment of your greenhouse from your smartphone. This app provides real-time data and controls for temperature humidity soil moisture and light levels enabling you to maintain optimal growing conditions for your plants.</p>
 
-Features
+<h2 align="center" id="title">Features</h2>
 Real-time Monitoring: View live data on temperature, humidity, soil moisture, and light levels.
 Automated Controls: Set thresholds to automatically adjust heating, cooling, and irrigation systems.
 Manual Override: Take manual control of the greenhouse systems at any time.
