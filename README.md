@@ -24,7 +24,7 @@ Screenshots
 
 <h2 align="center" id="title">Steps</h2>
 <ul>
-<li>bash Copy code git clone https://github.com/Dinukabk/GreenHouseAndroidApp.git</li>
+<li>git clone https://github.com/Dinukabk/GreenHouseAndroidApp.git</li>
 <li>Open the project in Android Studio.</li>
 <li>Sync the project with Gradle files.</li>
 <li>An active internet connection for real-time data syncing</li>
