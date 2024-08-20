@@ -43,5 +43,5 @@ Pair with your controller: Follow the on-screen instructions to connect the app 
 Monitor & control: Use the app to monitor real-time data, set automation rules, or manually adjust settings.
 
 
-License
+<h2 align="center" id="title">License</h2>
 This project is licensed under the MIT License - see the LICENSE file for details.
