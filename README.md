@@ -12,12 +12,16 @@ User-friendly Interface: Easy-to-use dashboard with intuitive controls.
 Screenshots
 
 
-Installation
-Prerequisites
-Android Studio
-Minimum Android SDK version: 21 (Lollipop)
-An active internet connection for real-time data syncing
-Greenhouse Automation hardware setup (temperature sensors, humidity sensors, etc.)
+<h2 align="center" id="title">Installation</h2>
+<ul>
+<li>Prerequisites</li>
+<li>Android Studio</li>
+<li>Minimum Android SDK version: 21 (Lollipop)</li>
+<li>An active internet connection for real-time data syncing</li>
+<l>Greenhouse Automation hardware setup (temperature sensors, humidity sensors, etc.)</li>
+
+</ul>
+
 Steps
 Clone the repository:
 bash
