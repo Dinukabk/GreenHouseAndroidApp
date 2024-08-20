@@ -22,27 +22,26 @@ Screenshots
 
 </ul>
 
-Steps
-Clone the repository:
-bash
-Copy code
-git clone https://github.com/Dinukabk/GreenHouseAndroidApp.git
-Open the project in Android Studio.
-Sync the project with Gradle files.
-Build and run the app on your Android device or emulator.
-Usage
+<h2 align="center" id="title">Steps</h2>
+<ul>
+<li>bash Copy code git clone https://github.com/Dinukabk/GreenHouseAndroidApp.git</li>
+<li>Open the project in Android Studio.</li>
+<li>Sync the project with Gradle files.</li>
+<li>An active internet connection for real-time data syncing</li>
+<li>Build and run the app on your Android device or emulator.</li>
+
+</ul>
+
+
+
+
+
+<h2 align="center" id="title">Usage</h2>
 Set up the hardware: Ensure all sensors and actuators are properly installed and connected to the controller.
 Launch the app: Open the Greenhouse Automation app on your Android device.
 Pair with your controller: Follow the on-screen instructions to connect the app to your greenhouse's control system.
 Monitor & control: Use the app to monitor real-time data, set automation rules, or manually adjust settings.
-Configuration
-You can configure the app settings from the settings menu:
 
-Sensor Calibration: Adjust calibration settings for temperature, humidity, soil moisture, and light sensors.
-Notification Preferences: Set the frequency and type of alerts you want to receive.
-Automation Rules: Define conditions under which certain systems should be automatically activated.
-Contributing
-We welcome contributions to improve the Greenhouse Automation Android App. If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcomed.
 
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
