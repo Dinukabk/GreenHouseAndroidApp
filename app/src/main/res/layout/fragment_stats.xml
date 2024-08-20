@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".ManagementActivity">
+
+    <TextView
+        android:id="@+id/fragmentNameTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Statistics"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/statsLL"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:weightSum="4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentNameTV"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="10dp"
+            app:cardMaxElevation="12dp"
+            app:cardCornerRadius="10dp"
+            app:cardPreventCornerOverlap="true"
+            app:strokeWidth="0dp">
+
+            <RelativeLayout
+                android:id="@+id/tempRL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|start">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/tempIV"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/temperature"
+                    android:adjustViewBounds="true"
+                    android:layout_marginStart="10dp"/>
+
+                <TextView
+                    android:id="@+id/currentTempTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/current_temp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_toEndOf="@id/tempIV"
+                    android:layout_marginStart="20dp"/>
+
+                <TextView
+                    android:id="@+id/minTempTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/min"
+                    android:textSize="17sp"
+                    android:layout_below="@+id/currentTempTV"
+                    android:layout_alignStart="@+id/currentTempTV"/>
+
+                <TextView
+                    android:id="@+id/maxTempTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/max"
+                    android:textSize="17sp"
+                    android:layout_below="@+id/minTempTV"
+                    android:layout_alignStart="@+id/minTempTV"/>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="10dp"
+            app:cardMaxElevation="12dp"
+            app:cardCornerRadius="10dp"
+            app:cardPreventCornerOverlap="true"
+            app:strokeWidth="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|start">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/humidityIV"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/humidity"
+                    android:adjustViewBounds="true"
+                    android:layout_marginStart="10dp"/>
+
+                <TextView
+                    android:id="@+id/currentHumidityTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/current_humidity"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_toEndOf="@id/humidityIV"
+                    android:layout_marginStart="20dp"/>
+
+                <TextView
+                    android:id="@+id/minHumidityTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/min"
+                    android:textSize="17sp"
+                    android:layout_below="@+id/currentHumidityTV"
+                    android:layout_alignStart="@+id/currentHumidityTV"/>
+
+                <TextView
+                    android:id="@+id/maxHumidityTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/max"
+                    android:textSize="17sp"
+                    android:layout_below="@+id/minHumidityTV"
+                    android:layout_alignStart="@+id/minHumidityTV"/>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="10dp"
+            app:cardMaxElevation="12dp"
+            app:cardCornerRadius="10dp"
+            app:cardPreventCornerOverlap="true"
+            app:strokeWidth="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start|center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/soilHydrationIV"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/soil_moisture"
+                    android:adjustViewBounds="true"
+                    android:layout_marginStart="10dp"/>
+
+                <TextView
+                    android:id="@+id/currentSoilHydrationTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/current_soil_hydration"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_toEndOf="@id/soilHydrationIV"
+                    android:layout_marginStart="20dp"/>
+
+                <TextView
+                    android:id="@+id/minSoilHydrationTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/min"
+                    android:textSize="17sp"
+                    android:layout_below="@+id/currentSoilHydrationTV"
+                    android:layout_alignStart="@+id/currentSoilHydrationTV"/>
+
+                <TextView
+                    android:id="@+id/maxSoilHydrationTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/max"
+                    android:textSize="17sp"
+                    android:layout_below="@+id/minSoilHydrationTV"
+                    android:layout_alignStart="@+id/minSoilHydrationTV"/>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="10dp"
+            app:cardMaxElevation="12dp"
+            app:cardCornerRadius="10dp"
+            app:cardPreventCornerOverlap="true"
+            app:strokeWidth="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|start">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/uvRadiationIV"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/uv_rays"
+                    android:adjustViewBounds="true"
+                    android:layout_marginStart="10dp"/>
+
+                <TextView
+                    android:id="@+id/currentUVRadiationTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/current_uv_radiation"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_toEndOf="@id/uvRadiationIV"
+                    android:layout_marginStart="20dp"/>
+
+                <TextView
+                    android:id="@+id/minUVRadiationTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/min"
+                    android:textSize="17sp"
+                    android:layout_below="@+id/currentUVRadiationTV"
+                    android:layout_alignStart="@+id/currentUVRadiationTV"/>
+
+                <TextView
+                    android:id="@+id/maxUVRadiationTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/max"
+                    android:textSize="17sp"
+                    android:layout_below="@+id/minUVRadiationTV"
+                    android:layout_alignStart="@+id/minUVRadiationTV"/>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
